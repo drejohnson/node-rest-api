@@ -1,0 +1,61 @@
+# Register
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+  "name": "Khal Drogo",
+  "email": "drogo@horselands.com",
+  "password": "bloodrider"
+}
+
+###
+
+# Login
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+  "email": "drogo@horselands.com",
+  "password": "bloodrider"
+}
+
+###
+
+# Get Posts
+GET http://localhost:3000/api/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
+
+###
+
+# Add Posts
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
+
+{
+  "title": "A Random Post To Delete",
+  "description": "I'm not going to last long"
+}
+
+###
+
+# Get Post By ID
+GET http://localhost:3000/api/posts/5de13daf3dbf37af51c2aa56
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
+
+###
+
+# Delete Post
+DELETE http://localhost:3000/api/posts/5de14ce1169e52c309577820
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
+
+###
+
+# Update Post
+PATCH http://localhost:3000/api/posts/5de14549996ed9bb504c513d
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
+
+{
+  "title": "Another Post About Nothing"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "node-auth",
+  "version": "0.0.1",
+  "description": "Node application with JWT authentication",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon --experimental-modules server.mjs",
+    "start": "node --experimental-modules server.mjs"
+  },
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
