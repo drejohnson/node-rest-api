@@ -16,6 +16,7 @@ app.use("/api/posts", postsRoute);
 app.use("/", (req, res) =>
   res.send(`
     <h2>Node REST API with Auth</h2>
+    <a href="https://github.com/drejohnson/node-rest-api/blob/master/requests.rest" target="_blank">Refer to the requests.rest file for api usage</a>
   `)
 );
 

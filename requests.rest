@@ -1,5 +1,6 @@
-# Register
+### Register
 POST http://localhost:4000/api/user/register
+
 Content-Type: application/json
 
 {
@@ -8,9 +9,7 @@ Content-Type: application/json
   "password": "bloodrider"
 }
 
-###
-
-# Login
+### Login
 POST http://localhost:4000/api/user/login
 Content-Type: application/json
 
@@ -19,15 +18,11 @@ Content-Type: application/json
   "password": "bloodrider"
 }
 
-###
-
-# Get Posts
+### Get Posts
 GET http://localhost:4000/api/posts
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
-###
-
-# Add Posts
+### Add Posts
 POST http://localhost:4000/api/posts
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
@@ -37,21 +32,15 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5
   "description": "I'm not going to last long"
 }
 
-###
-
-# Get Post By ID
+###  Post By ID
 GET http://localhost:4000/api/posts/5de13daf3dbf37af51c2aa56
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
-###
-
-# Delete Post
+### Delete Post
 DELETE http://localhost:4000/api/posts/5de14ce1169e52c309577820
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
-###
-
-# Update Post
+### Update Post
 PATCH http://localhost:4000/api/posts/5de14549996ed9bb504c513d
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
