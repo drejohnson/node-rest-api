@@ -4,9 +4,10 @@
   "description": "Node application with JWT authentication",
   "license": "MIT",
   "private": true,
+  "main": "index.mjs",
   "scripts": {
-    "dev": "nodemon --experimental-modules server.mjs",
-    "start": "node --experimental-modules server.mjs"
+    "dev": "nodemon --experimental-modules index.mjs",
+    "start": "node --experimental-modules index.mjs"
   },
   "dependencies": {
     "@hapi/joi": "^16.1.8",
