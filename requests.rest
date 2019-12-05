@@ -1,5 +1,5 @@
 # Register
-POST http://localhost:3000/api/user/register
+POST http://localhost:4000/api/user/register
 Content-Type: application/json
 
 {
@@ -11,7 +11,7 @@ Content-Type: application/json
 ###
 
 # Login
-POST http://localhost:3000/api/user/login
+POST http://localhost:4000/api/user/login
 Content-Type: application/json
 
 {
@@ -22,13 +22,13 @@ Content-Type: application/json
 ###
 
 # Get Posts
-GET http://localhost:3000/api/posts
+GET http://localhost:4000/api/posts
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
 ###
 
 # Add Posts
-POST http://localhost:3000/api/posts
+POST http://localhost:4000/api/posts
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
@@ -40,19 +40,19 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5
 ###
 
 # Get Post By ID
-GET http://localhost:3000/api/posts/5de13daf3dbf37af51c2aa56
+GET http://localhost:4000/api/posts/5de13daf3dbf37af51c2aa56
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
 ###
 
 # Delete Post
-DELETE http://localhost:3000/api/posts/5de14ce1169e52c309577820
+DELETE http://localhost:4000/api/posts/5de14ce1169e52c309577820
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
 ###
 
 # Update Post
-PATCH http://localhost:3000/api/posts/5de14549996ed9bb504c513d
+PATCH http://localhost:4000/api/posts/5de14549996ed9bb504c513d
 Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkZTA5OTI4ZmVkOTg5NjM1MGQzZWIxOSIsImlhdCI6MTU3NTAwNzI0NX0.pcTEj1cr1In7bGVvYWgoG-l0xNaoUT9L2Nd9cfEJhc8
 
