@@ -11,7 +11,7 @@ app.use(express.json());
 app.use("/api/user", authRoute);
 app.use("/api/posts", postsRoute);
 
-server.use("/", (req, res) =>
+app.use("/", (req, res) =>
   res.send(`
     <h2>Node REST API with Auth</h2>
   `)
